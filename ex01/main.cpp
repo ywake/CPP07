@@ -3,7 +3,8 @@
 
 #include "iter.hpp"
 
-template <typename T> void print(T const &arg)
+template <typename T>
+void print(T const &arg)
 {
   std::cout << arg << std::endl;
 }
@@ -11,8 +12,8 @@ template <typename T> void print(T const &arg)
 int main(void)
 {
   std::string strs[] = {"aaa", "bbb", "ccc"};
-  int nums[] = {0, 1, 2, 3, 4};
+  int const nums[] = {0, 1, 2, 3, 4};
 
   ::iter<std::string>(strs, strs->length(), print);
-  ::iter<int>(nums, sizeof(nums) / sizeof(int), print);
+  ::iter<const int>(nums, sizeof(nums) / sizeof(int), print);
 }
