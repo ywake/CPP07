@@ -4,3 +4,6 @@ max(a, b) = 3
 c = chaine2, d = chaine1
 min(c, d) = chaine1
 max(c, d) = chaine2
+e = chaine1, f = chaine2
+min(e, f) = chaine1
+max(e, f) = chaine2
